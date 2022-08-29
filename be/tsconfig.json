@@ -1,0 +1,32 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "declaration": true,
+        "lib": [
+            "es5",
+            "es6",
+            "dom"
+        ],
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "outDir": "./js-dest",
+        "preserveConstEnums": true,
+        "removeComments": true,
+        "sourceMap": true,
+        "strictFunctionTypes": true,
+        "strictNullChecks": true,
+        "target": "es5",
+        "typeRoots": [
+            "./node_modules/@types"
+        ],
+        "watch": true
+    },
+    "include": [
+        "./js-src/**/*"
+    ],
+    "exclude": [
+        "js-dest",
+        "node_modules",
+    ]
+}

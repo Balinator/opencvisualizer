@@ -1,0 +1,16 @@
+/js-dest/*
+/node_modules/*
+node_modules
+run-sonar.bat
+.sonar_lock
+*.txt
+*.lock
+*.out
+.scannerwork
+/style/css
+/.vscode/
+yacctab.py
+lextab.py
+resources/*.json
+resources/pre/*
+resources/c-files/source.c

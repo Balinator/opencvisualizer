@@ -1,0 +1,24 @@
+{
+  "name": "disszertacio-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "sass": "node-sass style/scss/ -o style/css/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/ace": "0.0.43",
+    "@types/jquery": "^3.3.33",
+    "ace-builds": "^1.4.8",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.14.1",
+    "requirejs": "^2.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "typescript": "^3.8.3"
+  }
+}

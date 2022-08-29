@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EduCode</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script data-main="js-dest/main" src="./../node_modules/requirejs/require.js"></script>
+    <script type="text/javascript" src="./../js-dest/all.js"></script>
+    <script src="./../node_modules/ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="./../style/css/style.css" />
+    
+</head>
+
+<body>
+    <pre id="editor">#include &lt;stdio.h&gt;
+
+int list[10] = {0, 5, 13, 9, 2, 6, 7, 15, 20, 1};
+int n = 10;
+
+void swap(int index, int nextIndex) {
+    int temp = list[index];
+    list[index] = list[nextIndex];
+    list[nextIndex] = temp;
+}
+
+int main() {
+    for (int round = 0; round &lt; n - 1; round++) {
+        for (int index = 0; index &lt; n - round - 1; index++) {
+            int nextIndex = index + 1;
+            if (list[index] &gt; list[nextIndex]) {
+                swap(index, nextIndex);
+            }
+        }
+    }
+}
+
+    </pre>
+    <canvas id="myCanvas" class="cursor-transparent" width="200" height="200">
+        Your browser does not support the HTML5 canvas tag.
+    </canvas>
+    <div id="panel" class="hidden">
+        <div id="toggle"></div>
+        <div id="scroll">
+            <div id="content">
+                <h3>Animate</h3>
+                <button id="animate" class="button">Animate</button>
+                <h3>Controls</h3>
+                <div class="controlls">
+                    <button class="button" disabled>Previous</button>
+                    <button id="playPause" class="button">Pause</button>
+                    <button id="next" class="button">Next</button>
+                    <button id="nextBreak" class="button">Next Breakpoint</button>
+                </div>
+                <h3>Speed</h3>
+                <input type="range" min="50" max="6000" value="3000" class="slider" id="speed">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

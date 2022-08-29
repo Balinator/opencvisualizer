@@ -1,0 +1,10 @@
+/js-dest/*
+/node_modules/*
+node_modules
+run-sonar.bat
+.sonar_lock
+*.txt
+*.lock
+.scannerwork
+/style/css
+/.vscode/
