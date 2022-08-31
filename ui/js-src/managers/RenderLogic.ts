@@ -195,7 +195,7 @@ class RenderLogic {
     // MARK: main
 
     main(): void {
-        fetch("http://localhost:3000/animate", {
+        fetch("http://aranos.go.ro/animate", { 
             method: 'POST',
             body: this.editor?.getValue(),
             headers: { 'Content-Type': 'text/plain' },
