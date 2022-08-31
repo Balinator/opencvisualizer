@@ -16,3 +16,5 @@ This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareA
 ## Start
 Run `npm start` in the be folder
 The server will run on [http://localhost:3000](http://localhost:3000) (the port can be defined by the `DIS_PORT` environment variable)
+## Demo
+[OpenCVisualizer](http://aranos.go.ro/)
